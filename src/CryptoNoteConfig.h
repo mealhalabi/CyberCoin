@@ -27,7 +27,7 @@ namespace parameters {
 const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
-const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 6; // addresses start with "2"
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x7b54; // addresses start with "cc"
 const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 10;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 60 * 60 * 2;
 
@@ -86,7 +86,7 @@ const char     P2P_NET_DATA_FILENAME[]                       = "p2pstate.bin";
 const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json";
 } // parameters
 
-const char     CRYPTONOTE_NAME[]                             = "bytecoin";
+const char     CRYPTONOTE_NAME[]                             = "cybercoin";
 
 const uint8_t  TRANSACTION_VERSION_1                         =  1;
 const uint8_t  TRANSACTION_VERSION_2                         =  2;
@@ -101,8 +101,8 @@ const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by def
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  100;    //by default, blocks count in blocks downloading
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
-const int      P2P_DEFAULT_PORT                              =  8080;
-const int      RPC_DEFAULT_PORT                              =  8081;
+const int      P2P_DEFAULT_PORT                              =  17236;
+const int      RPC_DEFAULT_PORT                              =  18236;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT                 =  5000;
@@ -117,21 +117,12 @@ const uint32_t P2P_DEFAULT_CONNECTION_TIMEOUT                = 5000;          //
 const uint32_t P2P_DEFAULT_PING_CONNECTION_TIMEOUT           = 2000;          // 2 seconds
 const uint64_t P2P_DEFAULT_INVOKE_TIMEOUT                    = 60 * 2 * 1000; // 2 minutes
 const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          // 5 seconds
-const char     P2P_STAT_TRUSTED_PUB_KEY[] = "E29507CA55455F37A3B783EE2C5123B8B6A34A0C5CAAE050922C6254161480C1";
+const char     P2P_STAT_TRUSTED_PUB_KEY[] = "E29507CA55454F37A3B783EE2C5123B8B6A34A0C5CAAE050922C6252161480C1";
 
 const char* const SEED_NODES[] = {
-  "seed.bytecoin.org:8080",
-  "85.25.201.95:8080",
-  "85.25.196.145:8080",
-  "85.25.196.146:8080",
-  "85.25.196.144:8080",
-  "5.199.168.138:8080",
-  "62.75.236.152:8080",
-  "85.25.194.245:8080",
-  "95.211.224.160:8080",
-  "144.76.200.44:8080",
-  "45.76.29.96:8080",
-  "45.32.156.183:8080"
+  //"your_seed_ip1.com:8080",
+  "net.ccoin.website:17236",
+  "web.ccoin.website:17236"
 };
 
 struct CheckpointData {
